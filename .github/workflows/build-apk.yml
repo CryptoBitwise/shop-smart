@@ -41,12 +41,18 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gradle-
           
+    - name: Verify Gradle wrapper
+      run: |
+        ls -la android/
+        ls -la android/gradle/wrapper/
+        
     - name: Make gradlew executable
       run: chmod +x android/gradlew
       
     - name: Build APK
       run: |
         cd android
+        ls -la
         ./gradlew assembleRelease
         
     - name: Upload APK artifact
