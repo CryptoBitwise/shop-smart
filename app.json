@@ -1,0 +1,24 @@
+{
+    "expo": {
+        "name": "ShopSmart",
+        "slug": "shopsmart-mobile",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "userInterfaceStyle": "light",
+        "splash": {
+            "resizeMode": "contain",
+            "backgroundColor": "#3B82F6"
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "supportsTablet": true
+        },
+        "android": {
+            "adaptiveIcon": {
+                "backgroundColor": "#3B82F6"
+            }
+        }
+    }
+}
