@@ -58,7 +58,7 @@ jobs:
         echo "Made gradlew executable"
         ls -la android/gradlew
         echo "Testing gradlew from root:"
-        android/gradlew --version
+        bash android/gradlew --version
       
     - name: Build APK
       run: |
@@ -68,9 +68,9 @@ jobs:
         echo "Checking gradlew permissions:"
         ls -la android/gradlew
         echo "Testing gradlew version:"
-        android/gradlew --version
+        bash android/gradlew --version
         echo "Running gradlew assembleRelease:"
-        android/gradlew assembleRelease
+        bash android/gradlew assembleRelease
         
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
