@@ -57,8 +57,8 @@ jobs:
         ls -la android/gradlew
       
     - name: Build APK
+      working-directory: android
       run: |
-        cd android
         echo "Current directory: $(pwd)"
         echo "Contents of android directory:"
         ls -la
