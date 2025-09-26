@@ -1,26 +1,31 @@
 {
-    "expo": {
-        "name": "ShopSmart",
-        "slug": "shopsmart-mobile",
-        "version": "1.0.0",
-        "orientation": "portrait",
-        "userInterfaceStyle": "light",
-        "splash": {
-            "resizeMode": "contain",
-            "backgroundColor": "#3B82F6"
-        },
-        "assetBundlePatterns": [
-            "**/*"
-        ],
-        "ios": {
-            "supportsTablet": true
-        },
-        "android": {
-            "package": "com.cryptobitwise.shopsmart",
-            "permissions": [],
-            "adaptiveIcon": {
-                "backgroundColor": "#3B82F6"
-            }
-        }
+  "expo": {
+    "name": "ShopSmart",
+    "slug": "shopsmart-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#3B82F6"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.cryptobitwise.shopsmart",
+      "permissions": [],
+      "adaptiveIcon": {
+        "backgroundColor": "#3B82F6"
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6aabb3f1-5ea3-4fa2-afee-62a218194f85"
+      }
     }
+  }
 }

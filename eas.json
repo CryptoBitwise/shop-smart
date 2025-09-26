@@ -1,26 +1,27 @@
 {
-    "cli": {
-        "version": ">= 3.19.0"
+  "cli": {
+    "version": ">= 3.19.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "preview": {
+      "developmentClient": false,
+      "android": {
+        "gradleCommand": ":app:assembleRelease",
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": true
+      }
     },
-    "build": {
-        "preview": {
-            "developmentClient": false,
-            "android": {
-                "gradleCommand": ":app:assembleRelease",
-                "buildType": "apk"
-            },
-            "ios": {
-                "simulator": true
-            }
-        },
-        "production": {
-            "autoIncrement": true,
-            "android": {
-                "buildType": "app-bundle"
-            }
-        }
-    },
-    "submit": {
-        "production": {}
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "buildType": "app-bundle"
+      }
     }
+  },
+  "submit": {
+    "production": {}
+  }
 }
