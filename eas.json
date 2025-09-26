@@ -1,26 +1,26 @@
 {
-  "cli": {
-    "version": ">= 3.19.0"
-  },
-  "build": {
-    "preview": {
-      "developmentClient": false,
-      "android": {
-        "gradleCommand": ":app:assembleRelease",
-        "buildType": "apk"
-      },
-      "ios": {
-        "simulator": true
-      }
+    "cli": {
+        "version": ">= 3.19.0"
     },
-    "production": {
-      "autoIncrement": true,
-      "android": {
-        "buildType": "app-bundle"
-      }
+    "build": {
+        "preview": {
+            "developmentClient": false,
+            "android": {
+                "gradleCommand": ":app:assembleRelease",
+                "buildType": "apk"
+            },
+            "ios": {
+                "simulator": true
+            }
+        },
+        "production": {
+            "autoIncrement": true,
+            "android": {
+                "buildType": "app-bundle"
+            }
+        }
+    },
+    "submit": {
+        "production": {}
     }
-  },
-  "submit": {
-    "production": {}
-  }
 }

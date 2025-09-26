@@ -6,6 +6,15 @@ node_modules/
 android/app/build/
 android/build/
 ios/build/
+web-build/
+dist/
+
+# Gradle caches and wrapper dists (do not commit)
+android/.gradle/
+.gradle/
+**/build/
+**/.gradle/
+**/wrapper/dists/
 
 # IDE
 .vscode/
@@ -14,6 +23,7 @@ ios/build/
 # OS
 .DS_Store
 Thumbs.db
+%ProgramData%/
 
 # Logs
 *.log
@@ -46,26 +56,14 @@ temp/
 # dotenv environment variables file
 .env
 
-# Expo
-.expo/
-dist/
-web-build/
-
-# Metro
-.metro-health-check*
-
 # Flipper
 ios/Pods/
 
-# Android
+# Android - keys and artifacts
 android/app/debug.keystore
 android/app/release.keystore
 android/app/shoplist-release-key.keystore
-
-# Keystore files
 *.keystore
 *.jks
-
-# Build artifacts
 *.apk
 *.aab
