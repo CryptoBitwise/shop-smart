@@ -47,23 +47,31 @@ jobs:
         ls -la android/
         echo "Checking gradle wrapper directory:"
         ls -la android/gradle/wrapper/
-        echo "Checking if gradlew exists and is executable:"
+        echo "Checking if gradlew exists:"
         ls -la android/gradlew
+        echo "Checking if gradlew.bat exists:"
+        ls -la android/gradlew.bat
         
     - name: Make gradlew executable
       run: |
         chmod +x android/gradlew
         echo "Made gradlew executable"
         ls -la android/gradlew
+        echo "Testing gradlew from root:"
+        cd android && ./gradlew --version
       
     - name: Build APK
-      working-directory: android
       run: |
         echo "Current directory: $(pwd)"
+        echo "Changing to android directory:"
+        cd android
+        echo "Current directory after cd: $(pwd)"
         echo "Contents of android directory:"
         ls -la
         echo "Checking gradlew permissions:"
         ls -la gradlew
+        echo "Testing gradlew version:"
+        ./gradlew --version
         echo "Running gradlew assembleRelease:"
         ./gradlew assembleRelease
         
