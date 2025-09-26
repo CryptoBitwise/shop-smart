@@ -1,0 +1,23 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Shell scripts should always use LF
+*.sh text eol=lf
+gradlew text eol=lf
+android/gradlew text eol=lf
+
+# Batch files should use CRLF
+*.bat text eol=crlf
+
+# Gradle files
+*.gradle text eol=lf
+*.properties text eol=lf
+
+# JSON files
+*.json text eol=lf
+
+# TypeScript/JavaScript files
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
